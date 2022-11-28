@@ -41,9 +41,11 @@ Kelas   : TI.22.A.3
 
 ![Foto](Foto/Ubah%20nomor.png)
 
-5. Untuk menampilkan semua nama gunakan format :
+5. Untuk menampilkan semua nama dan nomor gunakan format :
 
         p(dictionary.keys())
+
+![Foto](Foto/Tampil%20semua%20nama%20dan%20nomor.png)
 
 6. Untuk menampilkan semua data dictionary (daftar nama dan kontak) gunakan format :
 
