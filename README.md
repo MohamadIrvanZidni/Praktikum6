@@ -22,4 +22,28 @@ Kelas   : TI.22.A.3
         p('==============================')
         p('#    ari     |   085267888','\n#    dina    |   087677776')
 
+2. Untuk menampilkan kontak pada dictionary gunakan format :
+
+        p(dictionary['ari'])
+
+3. Untuk menambah kontak baru gunakan format :
+
+        dictionary['riko']='087654544'
+
+4. Untuk mengubah nomor kontak gunakan format :
+
+        dictionary['dina']='088999776'
+
+5. Untuk menampilkan semua nama gunakan format :
+
+        p(dictionary.keys())
+
+6. Untuk menampilkan semua data dictionary (daftar nama dan kontak) gunakan format :
+
+        p(dictionary)
+
+7. Untuk menghapus kontak gunakan format :
+
+        del dictionary['dina']    
+
 ## Tugas
