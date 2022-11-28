@@ -22,11 +22,13 @@ Soal Latihan
         p('==============================')
         p('#    ari     |   085267888','\n#    dina    |   087677776')
 
-2. Untuk menampilkan kontak awal, gunakan format :
+![Foto](Foto/Tampil%20kontak%20awal.png)
+
+2. Untuk menampilkan kontak ari, gunakan format :
 
         p(dictionary['ari'])
 
-![Foto](Foto/Tampil%20kontak.png)
+![Foto](Foto/Tampil%20kontak%20ari.png)
 
 3. Untuk menambahkan kontak baru (Riko), gunakan format :
 
