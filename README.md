@@ -61,13 +61,13 @@ Kelas   : TI.22.A.3
 
 ## Tugas
 
-Flowchart
+### Flowchart
 
 Buat flowchart terlebih dahulu untuk memudahkan alur program
 
 ![Foto](Foto/Flowchart%20Tugas.png)
 
-Code
+### Code
 
 1. Buat dictionary kosong terlebih dahulu
 
