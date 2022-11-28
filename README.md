@@ -60,3 +60,21 @@ Kelas   : TI.22.A.3
 ![Foto](Foto/Hapus%20kontak%20dina.png)
 
 ## Tugas
+
+Flowchart
+
+Buat flowchart terlebih dahulu untuk memudahkan alur program
+
+![Foto](Foto/Flowchart%20Tugas.png)
+
+Code
+
+1. Buat dictionary kosong terlebih dahulu
+2. Buat perulangan while-true untuk membuat looping agar program terus berjalan hingga selesai
+3. Buat percabangan if-else untuk memilih menu
+menu tambah data
+menu ubah data
+menu cari data
+menu hapus data
+menu lihat data
+menu exit
