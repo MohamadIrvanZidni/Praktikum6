@@ -10,6 +10,8 @@ Soal Latihan
 
 ## Tugas
 
+Soal Tugas
+
 ![Foto](Foto/Soal%20Tugas.png)
 
 ### Flowchart
