@@ -13,6 +13,9 @@ Kelas   : TI.22.A.3
 | -- | ---------- | ---- |
 | 1  | Latihan |  [Click Here](https://github.com/MohamadIrvanZidni/Praktikum6#latihan)  |
 | 2  | Tugas |  [Click Here](https://github.com/MohamadIrvanZidni/Praktikum6#tugas)  | 
+|    | Flowchart |  [Click Here](https://github.com/MohamadIrvanZidni/Praktikum6#flowchart)  |
+|    | Code |  [Click Here](https://github.com/MohamadIrvanZidni/Praktikum6#code)  |
+|    | Output |  [Click Here](https://github.com/MohamadIrvanZidni/Praktikum6#output)  |
 
 ## Latihan
 
