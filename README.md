@@ -118,7 +118,7 @@ Buatlah alur flowchart terlebih dahulu untuk mempermudah pada saat membuat progr
             else:
                 print("            KODE YANG ANDA MASUKKAN TIDAK VALID !!!!!!!!!!!")
 
-
+        // Saya menggunakan perulangan while-true agar program terus berjalan hingga berhenti
         while True:
             menu()
 
