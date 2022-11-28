@@ -13,7 +13,7 @@ Kelas   : TI.22.A.3
 1. Pertama buat daftar kontak awal dengan menggunakan dictionar, dengan format key (nama) dan value (nomor telpon)
 
     dictionary = {'ari':'085267888','dina':'087677776'}
-    
+        
     p('Kontak awal')
     p('==============================')
     p('#    nama    |   nomor telepon')
