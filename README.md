@@ -21,6 +21,7 @@ Kelas   : TI.22.A.3
         p('#    ari     |   085267888','\n#    dina    |   087677776')
 
 *Tipe data / variabel dictionary untuk menyimpan data dari dictionary
+
 *Tipe data / variabel p untuk deklarasi sebagai perintah untuk print agar lebih mudah
 
 ## Tugas
