@@ -26,11 +26,11 @@ Kelas   : TI.22.A.3
 
         p(dictionary['ari'])
 
-3. Untuk menambah kontak baru gunakan format :
+3. Untuk menambah kontak baru riko gunakan format :
 
         dictionary['riko']='087654544'
 
-4. Untuk mengubah nomor kontak gunakan format :
+4. Untuk mengubah nomor kontak dina dengan nomor baru gunakan format :
 
         dictionary['dina']='088999776'
 
@@ -42,7 +42,7 @@ Kelas   : TI.22.A.3
 
         p(dictionary)
 
-7. Untuk menghapus kontak gunakan format :
+7. Untuk menghapus kontak dina gunakan format :
 
         del dictionary['dina']    
 
