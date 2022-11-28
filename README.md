@@ -71,7 +71,7 @@ Buat flowchart terlebih dahulu untuk memudahkan alur program
 
 1. Buat dictionary kosong terlebih dahulu
 
-        dataMhs = {}
+        mahasiswa = {}
 
 2. Buat perulangan while-true untuk membuat looping agar program terus berjalan hingga selesai
 
