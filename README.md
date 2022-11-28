@@ -72,9 +72,15 @@ Code
 1. Buat dictionary kosong terlebih dahulu
 2. Buat perulangan while-true untuk membuat looping agar program terus berjalan hingga selesai
 3. Buat percabangan if-else untuk memilih menu
+
 menu tambah data
+
 menu ubah data
+
 menu cari data
+
 menu hapus data
+
 menu lihat data
+
 menu exit
