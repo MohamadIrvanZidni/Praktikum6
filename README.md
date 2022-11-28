@@ -75,91 +75,124 @@ Buat flowchart terlebih dahulu untuk memudahkan alur program
 
 2. Buat perulangan while-true untuk membuat looping agar program terus berjalan hingga selesai
 
-            while True:
-                c = input("\n(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar: ")
+        def menu():
+            print("\n")
+            print("====================================================")
+            print("      \t\t Program input nilai       ")
+            print("====================================================\n")
 
-3. Buat percabangan if-else untuk memilih menu
+            x = input("[(L)ihat, (T)ambah, (U)bah, (H)apus, (C)ari, (K)eluar]: ")
+            print("\n")
+
+            if x == 'L':
+                show()
+            elif x == 'T':
+                add()
+            elif x == 'U':
+                update()
+            elif x == 'H':
+                delete()
+            elif x == 'C':
+                search()
+            elif x == 'K':
+                print("==========================================================================")
+                print('\n')
+                print("> You exit the code                        ")
+                print("\n")
+                print("==========================================================================")
+
+                exit()
+
+            else:
+                print("            KODE YANG ANDA MASUKKAN TIDAK VALID !!!!!!!!!!!")
+
+        while True:
+            menu()
+
+3. Buat fungsi untuk memanggil menu
 
 menu tambah data
 
-        if (c.lower() == 't'):
-            print('\nTambah Data Mahasiswa Baru')
-            nama= input("Masukkan Nama\t\t: ")
-            nim= input("Masukkan NIM\t\t: ")
-            nilaiTugas= int(input("Masukkan Nilai Tugas\t: "))
-            nilaiUts= int(input("Masukkan Nilai UTS\t: "))
-            nilaiUas= int(input("Masukkan Nilai UAS\t: "))
-            nilaiAkhir= (0.30 * nilaiTugas) + (0.35 * nilaiUts) + (0.35 * nilaiUas)
-            dataMhs[nama]= nim, nilaiTugas, nilaiUts, nilaiUas, nilaiAkhir
-            print("\nData Berhasil Ditambahkan!")
+        def add():
+            print("Tambah Data")
+            nama = input("Nama\t : ")
+            nim = input("NIM\t : ")
+            uts = int(input("Nilai UTS\t : "))
+            uas = int(input("Nilai UAS\t : "))
+            tugas = int(input("Nilai Tugas\t : "))
+            akhir = (tugas * 30 / 100) + (uts * 35 / 100) + (uas * 35 / 100)
+            mahasiswa[nama] = nim, tugas, uts, uas, akhir
+
+Output : 
+
 
 menu ubah data
 
-        elif (c.lower() == 'u'):
-            print('\nMengedit Data Mahasiswa')
-            nama = input("Masukkan Nama: ")
-            if nama in dataMhs.keys():
-                nim= input("Masukkan NIM Baru\t: ")
-                nilaiTugas= int(input("Masukkan Nilai Tugas\t: "))
-                nilaiUts= int(input("Masukkan Nilai UTS\t: "))
-                nilaiUas= int(input("Masukkan Nilai UAS\t: "))
-                nilaiAkhir= (0.30 * nilaiTugas) + (0.35 * nilaiUts) + (0.35 * nilaiUas)
-                dataMhs[nama] = nim, nilaiTugas, nilaiUts, nilaiUas, nilaiAkhir
-                print("\nData Berhasil Di Update!")
+        def update():
+            print("Ubah Data")
+            nama = input("Masukkan Nama : ")
+            if nama in mahasiswa.keys():
+                nim = input("NIM\t : ")
+                uts = int(input("Nilai UTS\t : "))
+                uas = int(input("Nilai UAS\t : "))
+                tugas = int(input("Nilai Tugas\t : "))
+                akhir = (tugas * 30 / 100) + (uts * 35 / 100) + (uas * 35 / 100)
+                mahasiswa[nama] = nim, tugas, uts, uas, akhir
+
             else:
-                print("Data tidak ditemukan!")
+                print("Nama tidak ditemukan ")
 
 menu cari data
 
-        elif (c.lower() == 'c'):
-            print('\nCari Data Mahasiswa')
-            nama = input("Masukan Nama:  ")
-            if nama in dataMhs.keys():
-                print("\n                   DAFTAR NILAI MAHASISWA                   ")
-                print("==============================================================")
-                print("|     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
-                print("==============================================================")
-                print("| {0:12s} | {1:9s} | {2:5} | {3:5} | {4:5} | {5:6} |".format(nama, nim, nilaiTugas, nilaiUts, nilaiUas, nilaiAkhir))
-                print("==============================================================")
+        def search():
+            print("Cari Data")
+            a = input("Masukkan Nama : ")
+            if a in mahasiswa.keys():
+                print("===========================================================================")
+                print("|      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir   |")
+                print("===========================================================================")
+                print("| {0:14s} | {1:11s} | {2:7d} | {3:7d} | {4:7d} |     {5:6.2f} |"
+                    .format(a, mahasiswa[a][0], mahasiswa[a][1], mahasiswa[a][2], mahasiswa[a][3], mahasiswa[a][4]))
+                print("===========================================================================")
+
             else:
-                print("Datanya {0} Tidak Ada ".format(nama))
+                print("=================================================================================")
+                print("| No |      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir    |")
+                print("=================================================================================")
+                print("|                          DATA TIDAK DITEMUKAN                                 |")
+                print("=================================================================================")
 
 menu hapus data
 
-        elif (c.lower() == 'h'):
-            nama = input("Masukkan Nama:  ")
-            if nama in dataMhs.keys():
-                del dataMhs[nama]
-                print("Data Telah dihapus!")
+        def delete():
+            print("Hapus Data")
+            nama = input("Masukkan Nama : ")
+
+            if nama in mahasiswa.keys():
+                del mahasiswa[nama]
+
             else:
-                print("Data Mahasiswa Tidak Ada".format(nama))
+                print("Nama tidak ditemukan")
 
 menu lihat data
 
-        elif (c.lower() == 'l'):
-            if dataMhs.items():
-                print("\n                      DAFTAR NILAI MAHASISWA                    ")
-                print("==================================================================")
-                print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
-                print("==================================================================")
+        def show():
+            if mahasiswa.items():
+                print("Daftar Nilai")
+                print("=================================================================================")
+                print("| No |      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir    |")
+                print("=================================================================================")
                 i = 0
-                for x in dataMhs.items():
+                for a in mahasiswa.items():
                     i += 1
-                    print("| {6:2} | {0:12s} | {1:9s} | {2:5} | {3:5} | {4:5} | {5:6} |".format(x[0], x[1][0], x[1][1], x[1][2], x[1][3], x[1][4], i))
-                print("==================================================================")
+                    print("| {no:2d} | {0:14s} | {1:11s} | {2:7d} | {3:7d} | {4:7d} |      {5:6.2f} |"
+                        .format(a[0][: 14], a[1][0], a[1][1], a[1][2], a[1][3], a[1][4], no=i))
+                print("=================================================================================")
+
             else:
-                print("\n                      DAFTAR NILAI MAHASISWA                    ")
-                print("==================================================================")
-                print("| No |     Nama     |    NIM    | Tugas |  UTS  |  UAS  |  Akhir |")
-                print("==================================================================")
-                print("|                          TIDAK ADA DATA!                       |")
-                print("==================================================================")
-
-menu exit
-
-        elif (c.lower() == 'k'):
-            print('\n')
-            print(21*'=')
-            print("Nama\t: Rini Ariza\nKelas\t: TI.22.A3\nNIM\t: 312210337")
-            print(21*'=')
-            break
+                print("Daftar Nilai")
+                print("=================================================================================")
+                print("| No |      Nama      |     NIM     |  Tugas  |   UTS   |   UAS   |    Akhir    |")
+                print("=================================================================================")
+                print("|                                TIDAK ADA DATA                                 |")
+                print("=================================================================================")
