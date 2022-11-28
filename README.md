@@ -51,8 +51,12 @@ Kelas   : TI.22.A.3
 
         p(dictionary)
 
+![Foto](Foto/Tampil%20semua%20data.png)
+
 7. Untuk menghapus kontak dina gunakan format :
 
-        del dictionary['dina']    
+        del dictionary['dina']
+
+![Foto](Foto/Hapus%20kontak%20dina.png)
 
 ## Tugas
