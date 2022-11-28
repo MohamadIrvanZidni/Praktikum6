@@ -15,6 +15,8 @@ Soal Latihan
 
 ![Foto](Foto/Soal%20Latihan.png)
 
+Penjelasan
+
 1. Buatlah daftar kontak awal terlebih dahulu menggunakan dictionary, dengan format key (nama) dan value (nomor)
 
         //variabel p digunakan sebagai perintah cetak agar lebih mudah
@@ -80,6 +82,8 @@ Buatlah alur flowchart terlebih dahulu untuk mempermudah pada saat membuat progr
 ![Foto](Foto/Flowchart%20Tugas.png)
 
 ### Code
+
+Penjelasan
 
 1. Buatlah dictionary kosong terlebih dahulu
 
@@ -206,3 +210,35 @@ Buatlah alur flowchart terlebih dahulu untuk mempermudah pada saat membuat progr
                 print("=================================================================================")
 
 ### Output
+
+1. Disini Saya mencoba menambah data awal
+
+![Foto](Foto/Tambah%20data.png)
+
+2. Tampilan data awal
+
+![Foto](Foto/Lihat%20data.png)
+
+3. Lalu Saya menambah data kedua
+
+![Foto](Foto/Tambah%20data1.png)
+
+4. Tampilan data kedua
+
+![Foto](Foto/Lihat%20data1.png)
+
+5. Lalu Saya mencoba ubah nilai pada data 'Zidni'
+
+![Foto](Foto/Ubah%20data.png)
+
+6. Tampilan setelah diubah
+
+![Foto](Foto/Lihat%20data2.png)
+
+7. Saya mencoba cari data 'Irvan'
+
+![Foto](Foto/Cari%20data.png)
+
+8. Lalu Saya mencoba hapus data 'Zidni'
+
+![Foto](Foto/Hapus%20data.png)
