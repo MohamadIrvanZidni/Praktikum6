@@ -242,3 +242,7 @@ Penjelasan
 8. Lalu Saya mencoba hapus data 'Zidni'
 
 ![Foto](Foto/Hapus%20data.png)
+
+9. Tampilan setelah data 'Zidni' terhapus
+
+![Foto](Foto/Lihat%20data3.png)
