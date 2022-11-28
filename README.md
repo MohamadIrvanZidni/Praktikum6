@@ -26,13 +26,20 @@ Kelas   : TI.22.A.3
 
         p(dictionary['ari'])
 
+![Foto](Foto/Tampil20kontak.png)
+
+
 3. Untuk menambah kontak baru riko gunakan format :
 
         dictionary['riko']='087654544'
 
+![Foto](Foto/Tambah20kontak.png)
+
 4. Untuk mengubah nomor kontak dina dengan nomor baru gunakan format :
 
         dictionary['dina']='088999776'
+
+![Foto](Foto/Ubah20nomor.png)
 
 5. Untuk menampilkan semua nama gunakan format :
 
